@@ -19,9 +19,8 @@ def run_game():
 
     # 开始游戏的主循环
     while True:
-        bullets.update()
-        gf.check_events(ship)
-        gf.update_screen(setting, screen, ship)
-       
-
+        gf.check_events(ship, ai_settings=setting, bullets=bullets, screen=screen)
+        ship.update()
+        gf.update_bullets(bullets)
+        gf.update_screen(setting, screen, ship, bullets)
 run_game()
