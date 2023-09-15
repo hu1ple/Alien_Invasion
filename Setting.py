@@ -14,3 +14,6 @@ class Setting:
         self.bullet_allowed = 3
         # 飞行速度
         self.ship_speed_factor = 1.0
+        # 外星人设置
+        self.alien_speed_factor = 1
+        self.fleet_drop_speed = 1
